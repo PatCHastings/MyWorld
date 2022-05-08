@@ -1,0 +1,31 @@
+package myWorld;
+
+public class MyWorld {
+	  private static final int players = 1;
+	  int worldDate;
+	  String countryName;
+	  static int playerCount;
+	  static boolean singlePlayer;
+	 
+	  
+	  public MyWorld(int date, String name, int players, boolean multiplayer) { //Creates a new instance of MyCar
+	    worldDate = date;
+	    countryName = name;
+	    playerCount = players;
+	    boolean singlePlayer = multiplayer;
+	    
+	  }
+	  
+	  public static void main(String[] args) {
+	    MyWorld myWorld = new MyWorld(3030, "Boletaria", 2, singlePlayer);
+	    
+	    if (playerCount > 1) {  
+		      singlePlayer = true;
+			  } else {
+		      singlePlayer = false;
+			  }
+	    System.out.println("The year is " + myWorld.worldDate + " in the land of " + myWorld.countryName + " with a total of " + myWorld.playerCount + " adventurer(s):" + " multiplayer status is: " + myWorld.singlePlayer);
+	  
+	  }
+	  
+	}
