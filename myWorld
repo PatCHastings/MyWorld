@@ -8,7 +8,7 @@ public class MyWorld {
 	  static boolean singlePlayer;
 	 
 	  
-	  public MyWorld(int date, String name, int players, boolean multiplayer) { //Creates a new instance of MyWorld
+	  public MyWorld(int date, String name, int players, boolean multiplayer) { //Creates a new instance 
 	    worldDate = date;
 	    countryName = name;
 	    playerCount = players;
